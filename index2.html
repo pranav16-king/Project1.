@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Hospital Management System Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css" />
+     <link rel="website icon" type="svg" href="R.png">
+</head>
+
+<body class=" text-white min-height flex">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <button aria-label="Hospital Logo" class="logo-button">
+                    <i class="fas fa-heart text-white text-xl"></i>
+                </button>
+                <span class="logo-name">Hospital</span>
+            </div>
+            <nav class="nav">
+                <button aria-label="Home" class="nav-button active">
+                    <i class="fas fa-home text-white text-xl"></i>
+                </button>
+                <button aria-label="Images" class="nav-button">
+                    <i class="fas fa-image text-white text-xl"></i>
+                </button>
+                <button aria-label="Calendar" class="nav-button">
+                    <i class="fas fa-calendar-alt text-white text-xl"></i>
+                </button>
+                <button aria-label="Users" class="nav-button">
+                    <i class="fas fa-users text-white text-xl"></i>
+                </button>
+                <button aria-label="Reports" class="nav-button">
+                    <i class="fas fa-file-invoice text-white text-xl"></i>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="content">
+            <!-- Header -->
+            <header class="header">
+
+                <div>
+                    <h1 class="title">
+                        Hello Pranav <span class="wave">👋</span>
+                    </h1>
+                    <p class="subtitle">
+                        Hospital Management System
+                    </p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input class="search-input" placeholder="Search" type="search" />
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <button aria-label="Messages" class="icon-button">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </button>
+                    <button aria-label="Notifications" class="icon-button">
+                        <i class="fas fa-bell text-xl"></i>
+                    </button>
+                    <button aria-label="login" class="icon-button login">
+                        <a href="login.html" style=" text-decoration: none;">Login</a>
+                    </button>
+                    <img alt="User profile photo of a smiling man with short hair" class="profile-img"
+                        src="hacker.jpg" />
+                    <div>
+                        <button aria-expanded="false" aria-haspopup="listbox" class="dropdown-button">
+                            July 2024
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </header>
+            <!-- Stats cards -->
+            <section class="stats-grid">
+                <div class="card blue-card new">
+                    <div class="card-content">
+                        <div class="icon-circle blue-circle">
+                            <i class="fas fa-dollar-sign text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="card-subtitle new2">Hospital Earnings</p>
+                            <p class="card-title new2">$800K - 500K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card yellow-card new">
+                    <div class="card-content">
+                        <div class="icon-circle yellow-circle">
+                            <i class="fas fa-user-friends text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="card-subtitle new2">Total Patient</p>
+                            <p class="card-title new2">600</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card red-card new">
+                    <div class="card-content">
+                        <div class="icon-circle red-circle">
+                            <i class="fas fa-procedures text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="card-subtitle new2">Operation</p>
+                            <p class="card-title new2">400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card green-card new">
+                    <div class="card-content">
+                        <div class="icon-circle green-circle">
+                            <i class="fas fa-calendar-check text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="card-subtitle new2">Appointments</p>
+                            <p class="card-title new2">80</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <div class="king">
+                <div class="doctor-slide">
+                    <h3>Best Doctor's </h3>
+                    <h4 class=" doctor-title"> View more ↗</h4>
+                    <div class="doctor-img">
+                        <div class=" doctor doctor1"><img src="img/doctor1 (1).jpg" alt="image unavilable ">
+                            <h4>Dr. Alpha </h4>
+                            <h5>30 Year Experiance</h5>
+                        </div>
+                        <div class="doctor doctor2"><img src="img/doctor1 (5).jpg" alt="image unavilable">
+                            <h4>Dr. Beta </h4>
+                            <h5>35 Year Experiance</h5>
+                        </div>
+                        <div class=" doctor doctor3"><img src="img/doctor1 (3).jpg" alt="image unavilable">
+                            <h4>Dr. Gamma </h4>
+                            <h5>40 Year Experiance</h5>
+                        </div>
+                        <div class=" doctor doctor4"><img src="img/doctor1 (4).jpg" alt="image unavilable">
+                            <h4>Dr. Alpha </h4>
+                            <h5>34 Year Experiance</h5>
+                        </div>
+                        <div class=" doctor doctor5"><img src="img/doctor1 (2).jpg" alt="image unavilable">
+                            <h4>Dr. Beta </h4>
+                            <h5>37 Year Experiance</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart chart3">
+                    <canvas id="earningsChart" class="chart"></canvas>
+                </div>
+            </div>
+            <section class="section3">
+                <div class="container2">
+                    <div class="chart chart1">
+                        <canvas id="myChart" class="chart"></canvas>
+                    </div>
+                    <!-- <div class="chart chart2">
+                        <canvas id="doughnut" class="chart"></canvas>
+                    </div> -->
+                </div>
+            </section>
+        </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <canvas id="myChart"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
